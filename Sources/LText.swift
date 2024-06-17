@@ -18,7 +18,7 @@ public struct LText: View {
     }
     
     public var body: some View {
-        Text(text)
+        Text(LocalizedStringKey(text))
     }
 }
 
