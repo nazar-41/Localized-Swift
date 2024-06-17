@@ -8,8 +8,11 @@
 import Foundation
 import SwiftUI
 
+@available(watchOS 6.0, *)
+@available(macOS 10.15, *)
+@available(iOS 14.0, *)
 public extension String{
-    var localized: String{
-        return NSLocalizedString(self, comment: "")
+    var localized: LocalizedStringKey{
+        return LocalizedStringKey(self)
     }
 }
