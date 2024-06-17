@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "localized-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nazar-41/Localized-Swift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "4a316278f3361dafa0fc0d4465c622a3885d2451"
+      }
+    }
+  ],
+  "version" : 2
+}

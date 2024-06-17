@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  ExampleProject
+
+  Created by Nazar Velkakayev on 17.06.2024.
+  
+*/
+
+"welcome_message" = "Bienvenue dans notre application!";
+
+"login_button" = "Se connecter";
+
+"error_message" = "Quelque chose s'est mal passé. Veuillez réessayer.";
