@@ -3,11 +3,14 @@
 A lightweight Swift package designed to effortlessly localize your SwiftUI project.
 
 
+
+https://github.com/nazar-41/Localized-Swift/assets/89843408/28f4b00f-f6b9-4fdd-9d67-d7ba7a2a0487
+
+
+
 ## Installation  (Swift Package Manager)
 
 The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler.
-
-Once you have your Swift package set up, adding Starscream as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
 
 ```swift
 dependencies: [
