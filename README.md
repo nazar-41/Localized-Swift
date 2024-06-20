@@ -4,7 +4,8 @@ A lightweight Swift package designed to effortlessly localize your SwiftUI proje
 
 
 
-https://github.com/nazar-41/Localized-Swift/assets/89843408/28f4b00f-f6b9-4fdd-9d67-d7ba7a2a0487
+https://github.com/nazar-41/Localized-Swift/assets/89843408/8c0fb311-310e-4b2e-963f-c8cbed15e7bd
+
 
 
 
