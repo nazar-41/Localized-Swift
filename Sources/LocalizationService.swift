@@ -18,6 +18,8 @@ public class LocalizationService{
     }
     
     public static func setLanguage(_ lang: String){
-        LocalizationService.language = lang
+        DispatchQueue.main.async{
+            language = lang
+        }
     }
 }

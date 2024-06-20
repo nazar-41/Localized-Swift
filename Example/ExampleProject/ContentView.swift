@@ -9,8 +9,6 @@ import SwiftUI
 import Localized_Swift
 
 struct ContentView: View {
-    @EnvironmentObject private var manager: LocalizationManager
-    
     @State private var selectedLanguage: String = "en"
 
     var languages = ["en", "ru", "fr"]
@@ -42,7 +40,7 @@ struct ContentView: View {
             }
         }
         .onChange(of: selectedLanguage) { newLanguage in
-            manager.setLanguage(newLanguage)
+            LocalizationService.setLanguage(newLanguage)
         }
     }
 }
