@@ -12,7 +12,7 @@ import SwiftUI
 @available(iOS 14.0, *)
 public struct LocalizedView<Content: View>: View {
     @ViewBuilder let content: Content
-//    @AppStorage("localizedLang") private var language: String = ""
+    @AppStorage("localizedLang") private var language: String = ""
 
     public init(@ViewBuilder content: () -> Content) {
         self.content = content()
@@ -20,7 +20,7 @@ public struct LocalizedView<Content: View>: View {
     
     public var body: some View {
         content
-            .environment(\.locale, .init(identifier: LocalizationService.language))
+            .environment(\.locale, .init(identifier: language))
     }
 }
 
