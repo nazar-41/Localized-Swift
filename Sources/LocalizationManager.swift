@@ -12,7 +12,13 @@ import SwiftUI
 @available(macOS 10.15, *)
 @available(iOS 14.0, *)
 public class LocalizationManager: ObservableObject{
-    @AppStorage("localizedLang") public var language: String = ""
+    @AppStorage("localizedLang") var language: String = ""
     
     public init(){}
+    
+    public func setLanguage(_ lang: String){
+        DispatchQueue.main.async{
+            self.language = lang
+        }
+    }
 }
