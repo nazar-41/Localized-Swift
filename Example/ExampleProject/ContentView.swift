@@ -18,7 +18,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             List{
-                Picker("Select Your Language", selection: $manager.language) {
+                Picker("Select Your Language", selection: $selectedLanguage) {
                     ForEach(languages, id: \.self) {
                         Text($0)
                     }
@@ -40,6 +40,9 @@ struct ContentView: View {
                 .textCase(nil)
 
             }
+        }
+        .onChange(of: selectedLanguage) { newLanguage in
+            manager.setLanguage(newLanguage)
         }
     }
 }
