@@ -12,16 +12,15 @@ import SwiftUI
 @available(iOS 14.0, *)
 public struct LocalizedView<Content: View>: View {
     @ViewBuilder let content: Content
-    @StateObject private var manager: LocalizationManager = .init()
-    
+//    @AppStorage("localizedLang") private var language: String = ""
+
     public init(@ViewBuilder content: () -> Content) {
         self.content = content()
     }
     
     public var body: some View {
         content
-            .environmentObject(manager)
-            .environment(\.locale, .init(identifier: manager.language))
+            .environment(\.locale, .init(identifier: LocalizationService.language))
     }
 }
 
