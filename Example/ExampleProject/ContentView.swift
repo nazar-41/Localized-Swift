@@ -40,9 +40,7 @@ struct ContentView: View {
             }
         }
         .onChange(of: selectedLanguage) { newLanguage in
-            DispatchQueue.main.async{
-                LocalizationService.setLanguage(newLanguage)
-            }
+            LocalizationService.setLanguage(newLanguage)
         }
     }
 }
